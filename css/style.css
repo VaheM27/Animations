@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    max-width: 1080px;
+    min-width: 480px;
+    margin: 0 auto;
+}
+.clear::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+a{text-decoration: none;}
+a:visited,a:focus,a:active{color: black;}
+ul{list-style: none;}
+body{
+    font-family: 'Nunito Sans', sans-serif;}
+section{
+    width: 100%;
+    min-width: 1080px;
+    min-height: 480px;
+    margin: 50px 0;
+    background-color: white; 
+    position: relative;
+    z-index: 1; 
+    overflow: hidden;    
+}
+.grafic-left{
+    width: 52%;
+    float: left;
+    padding-top: 50px;   
+}
+.grafic-right{
+    width: 40%;
+    float: right;  
+    padding-top: 20px;
+    margin-left: 20px;   
+}
+section.one .grafic-right .icon{
+    float: left;
+    font-size: 20px;
+}
+section.one .grafic-right .icon i{
+    padding-top: 7px;
+    text-align: center;
+}
+section.one .grafic-right .grafic-text{
+    float: right;   
+}
+section.one .grafic-right:hover{
+    margin-top: 20px;
+    transition: 0.2s;
+}
+section.one .grafic-text h3{
+    line-height: 40px;
+    font-size: 23px;
+    font-weight: 900;
+}
+section.one .grafic-text p{
+    font-size: 15px;
+    line-height: 25px;
+    color: #818992;
+    font-weight: 600;
+}
+section.two{
+    margin: 0 auto;
+    background-color: #F9FAFC;
+}
+section.two .left-text ,
+section.two .right-text{
+    float: left;
+    text-align: right;
+    width: 31%;
+    padding: 30px 0;
+    margin: 30px 1%;   
+}
+section.two .center-image{
+    width: 20%;
+    float: left;
+    padding: 100px 0px;
+    position: relative;
+    right: 30px;
+}
+section.two .left-text{
+    margin-right: 80px;
+}
+section.two .left-text .left-texts{
+    float: left;
+    text-align: right;
+    margin-right: 20px;    
+}
+section.two .left-text .left-texts h3{
+    line-height: 40px;
+    font-size: 23px;
+    font-weight: 900;
+}
+section.two .left-text .left-texts p{
+    font-size: 15px;
+    line-height: 25px;
+    color: #818992;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+section.two .left-text .left-icon{
+    float: left;
+    font-size: 25px;  
+    color: #13c4a1;
+    padding-top: 10px;
+    text-align: center;
+}
+section.two .right-text{
+    margin-left: 80px;
+}
+section.two .right-text .right-texts{
+    float: right;
+    margin-left: 20px;
+    text-align: left;
+}
+section.two .right-text .right-texts h3{
+    line-height: 40px;
+    font-size: 23px;
+    font-weight: 900;
+}
+section.two .right-text .right-texts p{
+    font-size: 15px;
+    line-height: 25px;
+    color: #818992;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+section.two .right-text .right-icon{
+    float: right;
+    font-size: 25px;  
+    color: #13c4a1;
+    padding-top: 10px;
+    text-align: center;
+}
+.puzzle{
+    animation: Puzzle 5s linear infinite;
+    right:35px;
+    bottom: 0;
+    position:absolute;
+}
+@keyframes Puzzle{
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(50px);}
+    100%{transform: translateY(0px);}
+}
+.circle{
+    animation: CircleRotate 8s linear infinite;
+    left:35px;
+    bottom: 0;
+    position:absolute;
+    z-index: -1;
+}
+@keyframes CircleRotate{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+section.three{
+    background-color: #edf5ff;
+    padding: 0 10px;
+}
+section.three .left-show-text , section.three .right-show-text{
+    float: left;
+    width: 50%;
+}
+section.three .left-show-text{
+    margin: 80px 0;
+}
+section.three .left-show-text h2{
+    font-size: 35px;
+}
+section.three .left-show-text p{
+    font-size: 15px;
+    line-height: 25px;
+    color: #818992;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+.animation-row{
+    width: 90px;
+    height: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #13c4a1;
+    border-radius: 2px;
+    position: relative;
+}
+.animation-row::before{
+    background-color: #fff;
+    width: 5px;
+    height: 100%;
+    content: "";
+    position: absolute;
+    animation: animation-Row 2s linear infinite;
+}
+@keyframes animation-Row{
+    0%{
+        left:0;
+    }
+    100%{
+       left:100%;
+   }
+}
+section.three .left-show-text a{
+    padding: 15px 33px;
+    background-color: #ff8a73;
+    border-radius: 50px;
+    box-shadow: 1px 0 30px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    font-weight: 600;
+    color: black;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin: 10px 10px;  
+}
+section.three .left-show-text a:hover{
+    background-color: #13c4a1 ;
+    transition: all 0.2s;
+    bottom: 10px;
+    color: white;
+}
+section.three .right-show-text .phone-one{
+    position: absolute;
+    z-index: 0;
+    top: 20px;
+    right:300px ;
+}
+section.three .right-show-text .phone-two{
+    position: absolute;
+    z-index: 1;
+    right: 150px;
+    top: 20px;
+}
+section.three .right-show-text .phone-one,
+section.three .right-show-text .phone-two{
+    animation: Phones 4s linear infinite;
+}
+@keyframes Phones{
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(20px);}
+    100%{transform: translateY(0px);}
+}
+
+/* ........................................ */
+
+
+.animation-row-two{
+    width: 90px;
+    height: 5px;
+    margin: 20px auto;
+    background-color: #13c4a1;
+    border-radius: 2px;
+    position: relative;
+}
+.animation-row-two::before{
+    background-color: #fff;
+    width: 5px;
+    height: 100%;
+    content: "";
+    position: absolute;
+    animation: animation-Row-two 2s linear infinite;
+}
+@keyframes animation-Row-two{
+    0%{
+        left:0;
+    }
+    100%{
+       left:100%;
+   }
+}
+section.price-list{
+    padding: 80px 30px;
+    text-align: center;
+}
+section.price-list h2{
+    font-size: 35px;
+    font-weight: 700;
+}
+section.price-list p{
+    font-size: 16px;
+    line-height: 1.6;
+    color: #818992;
+    max-width: 650px;
+    margin: 0 auto;
+}
+section.price-list .item{
+    float: left;
+    background-color: #13c4a1;
+    padding: 30px 0;
+    width: 31.333%;
+    margin: 30px 1%;
+    color: #fff;
+    transition: all .3s;
+}
+section.price-list .item:hover{
+    transform: translateY(-30px);
+}
+section.price-list .item h3{
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+section.price-list .item .price{
+    font-size: 45px;
+    font-weight: 700;
+    text-align: left;
+    padding: 15px 0 15px 65px;
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
+    color: #000;
+    z-index: 1;
+    margin-bottom: 30px;
+}
+section.price-list .item .price sup ,
+section.price-list .item .price sub{
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+}
+section.price-list .item .price sup{
+    top: -15px;
+}
+section.price-list .item .price sub{
+    bottom: 10px;
+}
+section.price-list .item .price::after{
+    position: absolute;
+    left: -20%;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 25px;
+    content: '';
+    height: 100%;
+    transform: skewX(-35deg);
+    z-index: -1;
+}
+section.price-list .item ul{
+    line-height: 40px;
+    margin-bottom: 25px;
+}
+section.price-list .item a{
+    padding: 12px 30px;
+    border-radius: 6px;
+    background-color: #ff8a73;
+    box-shadow: 5px 0 30px rgba(0,0,0, .3);; 
+    color:#fff;
+    text-transform: uppercase ;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    z-index: 1;
+}
+section.price-list .item a::before,
+section.price-list .item a::after{
+    background-color: white;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    content: "";
+    top: 0;
+    transition: 0.6s;
+    z-index: -1;
+}
+section.price-list .item a::before{
+    left: -100%;
+}
+section.price-list .item a::after{
+    right: -100%;
+}
+section.price-list .item a:hover::before{
+    left:0;  
+}
+section.price-list .item a:hover::after{
+    right:0;
+}
+section.price-list .item a:hover{
+    color: #ff8a73;
+}
